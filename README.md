@@ -19,24 +19,18 @@ s3sync.py [-h] [-K KEY] [-S SECRET] [-s BUCKET] [-d BUCKET] [-P PROFILE] [--dryr
 
 ### Options
 
-```
--h, --help            show this help message and exit
--K KEY, --key KEY     AWS access key id, this has precedence over --profile option.
--S SECRET, --secret SECRET
-                    AWS secret acces key.
--s BUCKET, --src BUCKET
-                    Source S3 bucket name.
--d BUCKET, --dst BUCKET
-                    Destination S3 bucket name.
--P PROFILE, --profile PROFILE
-                    AWS profile to use.
---dryrun              Displays the operations that would be performed using the specified command
-                    without actually running them.
---list                Only lists files in source and/or destination bucket(s).
---get-policy          Prints out the policy required in the source bucket to allow the copy across
-                    AWS accounts.
---skip-existing       Skips existing key names, does not check that files are the same.
-```
+| Option                        | Description                                                                                                |
+|-------------------------------|------------------------------------------------------------------------------------------------------------|
+| -h, --help                    | Show help message and exit                                                                                 |
+| -K KEY, --key KEY             | AWS access key id, this has precedence over --profile option.                                              |
+| -S SECRET, --secret SECRET    | AWS secret acces key.                                                                                      |
+| -s BUCKET, --src BUCKET       | Source S3 bucket name.                                                                                     |
+| -d BUCKET, --dst BUCKET       | Destination S3 bucket name.                                                                                |
+| -P PROFILE, --profile PROFILE | AWS profile to use.                                                                                        |
+| --dryrun                      | Displays the operations that would be performed using the specified command without actually running them. |
+| --list                        | Only lists files in source and/or destination bucket(s).                                                   |
+| --get-policy                  | Prints out the policy required in the source bucket to allow the copy across AWS accounts.                 |
+| --skip-existing               | Skips existing key names, does not check that files are the same.                                          | 
 
 ## Changelog
 
